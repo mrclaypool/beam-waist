@@ -5,7 +5,7 @@ Note: bwf2.py is more useful and clean. Look at that one first.
 bwf2.py is a version that contains the techniques that worked the best for me. If you'd like to see more options, look below at the bwf.py breakdown. Otherwise, use bwf2.py.
 
 First, we have a technique that fits for a geometric beam (28-100) and a version that fits for a gaussian beam (101-214).
-The geometric technique uses a threshold value based on the maximum value pixel in the image to find the edges of an assumed circular beam. This threshold is controlled on lines 58,59 and 63-64.
+The geometric technique uses a threshold value based on the maximum value pixel in the image to find the edges of an assumed circular beam. This threshold is controlled on lines 58-59 and 63-64.
 The gaussian technique can either use all of the points in the array (128-133) or only points that are unsaturated (136-184). One of these needs to be uncommented along with lines 101-214 to get the technique to function.  
 Both the geometric and gaussian sections can be uncommented together to allow for comparison between the two. Useful if you're unsure whether your beam is better in the geometric or gaussian regime.
 
