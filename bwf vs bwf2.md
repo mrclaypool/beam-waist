@@ -10,7 +10,7 @@ The gaussian technique can either use all of the points in the array (128-133) o
 Both the geometric and gaussian sections can be uncommented together to allow for comparison between the two. Useful if you're unsure whether your beam is better in the geometric or gaussian regime.
 
 There are some useful parameters and sections of the code to keep in mind: 
-* (18) ``count``: This, if used in conjunction with run.py, should be set to the highest numbered image file name, not the number of images in the folder (e.g. if there are 108 images in the directory but the highest numbered file is 107.png, count=107)
+* (18) ``count``: This, if used in conjunction with run.py, should be set to the highest numbered image file name, not the number of images in the folder (e.g. if there are 108 images in the directory but the highest numbered file is 107.png, set ``count=107``)
 * (219) ``radmirr``: This should be the width of the mirror or the width of the base in mm divided by two. For tracking gaussian beams, OAP mirrors have z=0 at the center of the mirror.
 * (223) ``dfrommirr``: This should be the distance from your first image to the edge of the mirror as measured in radmirr. Keep the two consistent.
 * (224) ``drail``: This is the distance between your first image and your last image aka the length of the rail your setup travels along.
